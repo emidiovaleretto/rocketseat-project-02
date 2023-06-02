@@ -3,90 +3,125 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #161023;
+    color: #F9F9F9;
+
+    min-height: 100vh;
+}
+
 a {
     text-decoration: none;
-    color: #000;
+    color: #F9F9F9;
 }
+
 li {
     list-style: none;
 }
+
 .container {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 0 auto;
+    padding-top: 65px;
 }
-.header {
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 120px;
 }
-.header img {
+
+nav img {
     width: 131px;
     height: 22px;
 }
-.header nav {
+
+nav ul {
     display: flex;
-    width: 220px;
-    justify-content: space-between;
+    gap: 48px;
 }
-.header nav li {
+
+nav ul li {
     justify-content: space-between;
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 1.125rem;
     color: #1F1534;
 }
-.header nav li:not(:nth-child(1)) {
+
+nav ul li:not(:nth-child(1)) {
     font-weight: 400;
     opacity: 0.5;
 }
+
+nav ul li:hover {
+    opacity: 1;
+}
+
 .main-content {
     display: flex;
+    align-items: center;
 }
+
 .main-content-text h1 {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 40px;
 }
+
 .main-content-text span {
     color: #89C5CC;
     font-weight: 700;
 }
+
 .main-content-text p {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.875rem;
     line-height: 28px;
-    color: #7D7987;
+    color: #d3d3d3;
     max-width: 438px;
     margin-bottom: 80px;
 }
+
 .main-content-text a {
     font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
     padding: 16px 32px;
-    color: #F9F9F9;
     background-color: #69B99D;
     border-radius: 4px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
+
 .main-content-text a:hover {
     background-color: #4B9E81;
     transition: all .2s;
 }
+
 .hero-image img {
     max-width: 417px;
 }
+
 footer {
     margin-top: 120px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.875rem;
 }
+
 footer a {
     font-weight: 700;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
+
 footer img {
     position: fixed;
     bottom: 0;
